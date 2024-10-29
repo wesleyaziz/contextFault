@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container .faultText {
+  position: absolute;
+  font-family: Impact, sans-serif;
+  font-size: 5rem;
+  color: #fff;
+  letter-spacing: 0.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.container .faultText_fault::before, .container .faultText_fault::after {
+  content: "CONTEXT";
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: screen;
+}
+.container .faultText_fault::before {
+  color: #f00;
+  transform: translateX(2%);
+}
+.container .faultText_fault::after {
+  color: #00f;
+  transform: translateX(-2%);
+}
