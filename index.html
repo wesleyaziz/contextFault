@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="container" onclick="faultText.fault()">
-        <p class="faultText">CONTEXT</p>
-        <p class="faultText">CONTEXT</p>
-        <p class="faultText">CONTEXT</p>
-        <p class="faultText">CONTEXT</p>
-        <p class="faultText">CONTEXT</p>
+        <p class="faultText">No SIGNAL</p>
+        <p class="faultText">NO SIGNAL</p>
+        <p class="faultText">NO SIGNAL</p>
+        <p class="faultText">NO SIGNAL</p>
+        <p class="faultText">NO SIGNAL</p>
     </div>
     <script>
         const faultText = {
@@ -40,6 +40,7 @@
                         let w = Math.random() * 40 +10
                         let h = Math.random() * 50 +50
                         text.style.clipPath = `polygon(${x}% ${y}%,${x+w}% ${y}%,${x+w}% ${y+h}%,${x}% ${y+h}%)`
+                        
                     })
                 },30)
             }

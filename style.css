@@ -32,7 +32,7 @@ body {
           user-select: none;
 }
 .container .faultText_fault::before, .container .faultText_fault::after {
-  content: "CONTEXT";
+  content: "NO SIGNAL";
   position: absolute;
   top: 0;
   left: 0;

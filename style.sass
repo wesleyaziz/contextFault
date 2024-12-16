@@ -26,16 +26,20 @@ body
     color: #fff
     letter-spacing: 0.5rem
     user-select: none
-  .faultText_fault::before,.faultText_fault::after
-    content: "CONTEXT"
-    position: absolute
-    top: 0
-    left: 0
-    mix-blend-mode: screen
 
-  .faultText_fault::before
-    color: #f00
-    transform: translateX(2%)
-  .faultText_fault::after
-    color: #00f
-    transform: translateX(-2%)
+  .faultText_fault
+    &::before,
+    &::after
+      content: "NO SIGNAL"
+      position: absolute
+      top: 0
+      left: 0
+      mix-blend-mode: screen
+
+    &::before
+      color: #f00
+      transform: translateX(2%)
+
+    &::after
+      color: #00f
+      transform: translateX(-2%)
